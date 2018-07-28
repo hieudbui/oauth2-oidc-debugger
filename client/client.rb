@@ -24,6 +24,7 @@ post("/token") do
   begin
     grant_type = params[:grant_type]
     token_endpoint = params[:token_endpoint]
+    apigee_service = params[:apigee_service]
     client_id = params[:client_id]
     redirect_uri = ""
     code = ""
@@ -102,11 +103,23 @@ post("/token") do
       parameterObject[:scope] = scope
     end
     puts "parameterObject=" + parameterObject.to_s
-    api_result = RestClient::Request.execute(method: :post, url: params[:token_endpoint], payload: parameterObject, verify_ssl: sslValidate)
-    oauth2_token_response = JSON.parse(api_result)
-    puts api_result
-    content_type :json
-    api_result
+    accessTokenResult = RestClient::Request.execute(method: :post, url: token_endpoint, payload: parameterObject, verify_ssl: sslValidate)
+    oauth2_token_response = JSON.parse(accessTokenResult)
+    puts accessTokenResult
+    @accessTokenResult = accessTokenResult
+
+    apigeeServiceHeaders = {
+        params: {
+            client_id: client_id
+        },
+        :Authorization => "Bearer #{oauth2_token_response['access_token']}"
+    }
+    apigeeServiceResult = RestClient::Request.execute(method: :get, url: apigee_service, headers: apigeeServiceHeaders)
+    puts apigeeServiceResult
+    @apigeeServiceResult = apigeeServiceResult
+    erb :root
+      # content_type :json
+      # accessTokenResult
   rescue RestClient::ExceptionWithResponse => e
     puts "An exception occured: " + e.message
     puts "Stacktrace: " + e.backtrace.inspect

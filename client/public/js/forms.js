@@ -22,6 +22,7 @@ function OnSubmitTokenEndpointForm() {
     document.getElementById("token_client_id").value = document.getElementById("client_id").value;
     document.getElementById("token_redirect_uri").value = document.getElementById("redirect_uri").value;
     document.getElementById("token_token_endpoint").value = document.getElementById("token_endpoint").value;
+    document.getElementById("token_apigee_service").value = document.getElementById("apigee_service").value;
     document.token_step.action = "/token";
     console.log("Leaving OnSubmitTokenEndpointForm().");
     return true;

@@ -42,7 +42,18 @@
         <tr>
           <div class="form-group">
             <td>
-              <div class="tooltip"><label>Apigee App App Key (AKA Client Id): </label><span class="tooltiptext">Enter the Apigee Client Id</span>
+              <div class="tooltip"><label>Apigee Oauth protected service: </label><span class="tooltiptext">Can not be changed at this time.  It only supports GET http method.  Posting is not allowed</span>
+              </div>
+            </td>
+            <td>
+              <input type="text" name="apigee_service" id="apigee_service" class="stored" value="https://merrill-test.apigee.net/api172oauth2"/>
+            </td>
+          </div>
+        </tr>
+        <tr>
+          <div class="form-group">
+            <td>
+              <div class="tooltip"><label>Apigee App Key (AKA Client Id): </label><span class="tooltiptext">Enter the Apigee Client Id</span>
               </div>
             </td>
             <td>
@@ -132,6 +143,7 @@
       <input type="hidden" name="client_id" class="input" id="token_client_id"/>
       <input type="hidden" name="redirect_uri" class="input" id="token_redirect_uri"/>
       <input type="hidden" name="token_endpoint" class="input" id="token_token_endpoint"/>
+      <input type="hidden" name="apigee_service" class="input" id="token_apigee_service"/>
       <input type="hidden" name="grant_type" class="input" id="token_grant_type" value="authorization_code"/>
       <table>
         <tr>
@@ -212,7 +224,36 @@
 <div class="token_endpoint_result" id="token_endpoint_result">
 </div>
 
-<div id="step4" class="step4" style="display:none">
+
+<div class="step4" id="step4">
+  <fieldset>
+    <legend id="h2_title_2" name="h2_title_2">Access Token and Test Service result</legend>
+    <table>
+      <tr>
+        <td>
+          <div class="tooltip">
+            <label name="display_access_token_result" value="" id="display_token_request_form_label1">Access Token Result</label><span class="tooltiptext">The access token result.</span>
+          </div>
+        </td>
+        <td><textarea rows="20" cols="100" id="display_token_request_form_textarea1"><%= defined?(@accessTokenResult) ? @accessTokenResult : '' %></textarea></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="tooltip">
+            <label name="display_apigee_service_result" value="" id="display_apigee_service_result">Apigee Service
+              Result</label><span class="tooltiptext">The Apigee service result</span>
+          </div>
+        </td>
+        <td>
+          <textarea rows="5" cols="100" id="display_token_request_form_textarea1"><%= defined?(@apigeeServiceResult) ? @apigeeServiceResult : '' %></textarea>
+        </td>
+      </tr>
+    </table>
+  </fieldset>
+</div>
+
+
+<div id="step5" class="step5" style="display:none">
   <fieldset>
     <legend id="h2_title_3" name="h2_title_3">Obtain New Access Token Using Refresh Token</legend>
     <form name="refresh_step" id="refresh_step" method="post" onsubmit="return OnSubmitTokenEndpointForm();">

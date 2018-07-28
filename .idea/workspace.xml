@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="047be65e-230b-43b3-b879-c6fe6f0bc5d4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/client/Gemfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client/Gemfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/client.rb" beforeDir="false" afterPath="$PROJECT_DIR$/client/client.rb" afterDir="false" />
@@ -47,8 +42,8 @@
       <file leaf-file-name="root.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/views/root.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="44" column="200" selection-start-line="44" selection-start-column="200" selection-end-line="44" selection-end-column="200" />
+            <state relative-caret-position="175">
+              <caret line="70" column="141" selection-start-line="70" selection-start-column="141" selection-end-line="70" selection-end-column="141" />
               <folding>
                 <element signature="n#style#0;n#div#9;n#!!top" expanded="true" />
               </folding>
@@ -252,7 +247,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -337,7 +332,7 @@
       <workItem from="1532716466286" duration="58000" />
       <workItem from="1532716568583" duration="6993000" />
       <workItem from="1532733865214" duration="713000" />
-      <workItem from="1532734607646" duration="4839000" />
+      <workItem from="1532734607646" duration="4994000" />
     </task>
     <task id="LOCAL-00001" summary="change to be compatible with apigee">
       <created>1532721238279</created>
@@ -371,7 +366,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12603000" />
+    <option name="totallyTimeSpent" value="12758000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="1028" extended-state="0" />
@@ -386,7 +381,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50061053" side_tool="true" weight="0.39977974" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.34030837" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.34030837" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
@@ -400,7 +395,7 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.4993895" visible="true" weight="0.39977974" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4993895" weight="0.39977974" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -448,7 +443,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="change to be compatible with apigee" />
     <MESSAGE value="update redirect uri" />
-    <option name="LAST_COMMIT_MESSAGE" value="update redirect uri" />
+    <MESSAGE value="push stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="push stuff" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -701,8 +697,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/root.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="44" column="200" selection-start-line="44" selection-start-column="200" selection-end-line="44" selection-end-column="200" />
+        <state relative-caret-position="175">
+          <caret line="70" column="141" selection-start-line="70" selection-start-column="141" selection-end-line="70" selection-end-column="141" />
           <folding>
             <element signature="n#style#0;n#div#9;n#!!top" expanded="true" />
           </folding>
