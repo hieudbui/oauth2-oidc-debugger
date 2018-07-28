@@ -16,10 +16,20 @@ rdebug-ide --host 0.0.0.0 --port 1234 --dispatcher-port 26162 -- /Users/hbuib/.r
 ```
 On other systems, the commands needed to start the debugger in a local docker container will be similar. The docker Sinatra/Ruby runtime will have to be able to establish connections to remote IdP endpoint (whether locally in other docker containers, on the host VM, or over the network/internet).  On the test system, it was necessary to add "--net=host" to the "docker run" args. The network connectivity details for docker may vary from platform-to-platform.
 
-to push to heroku (its a hack right now, we have two git repos)
+to push to heroku (its a hack right now, we have two git repos, one at the root leve, and one in client sub directory ack!)
 the git repo under client is registered for heroku
 cd client
+git add -u
 git commit -m 'blah'
 git push heroku master
+
+
+not sure why yet but commit at the root level doesn't work
+do the following:
+git add -u
+git commit -m 'whatever'
+git push
+
+
 
 
