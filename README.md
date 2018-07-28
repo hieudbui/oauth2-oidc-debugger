@@ -3,6 +3,11 @@
 ## Prerequisites
 To run this project you will need to install docker.
 
+## Run locally
+Need to have ruby
+cd to client
+rdebug-ide --host 0.0.0.0 --port 1234 --dispatcher-port 26162 -- /Users/hbuib/.rvm/gems/ruby-2.4.1/bin/rackup -o 0.0.0.0 -p 3000
+ 
 ## Building the docker image
 ``` 
  cd oauth2-oidc-debugger/client
@@ -11,6 +16,10 @@ To run this project you will need to install docker.
 ```
 On other systems, the commands needed to start the debugger in a local docker container will be similar. The docker Sinatra/Ruby runtime will have to be able to establish connections to remote IdP endpoint (whether locally in other docker containers, on the host VM, or over the network/internet).  On the test system, it was necessary to add "--net=host" to the "docker run" args. The network connectivity details for docker may vary from platform-to-platform.
 
-to push to heroku
-
+to push to heroku (its a hack right now, we have two git repos)
+the git repo under client is registered for heroku
+cd client
+git commit -m 'blah'
 git push heroku master
+
+
