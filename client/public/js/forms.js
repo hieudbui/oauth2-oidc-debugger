@@ -805,12 +805,12 @@ window.onload = function () {
     $("#password-form-group1").hide();
     $("#password-form-group2").hide();
 
-    document.getElementById("authorization_endpoint").addEventListener("keypress", recalculateAuthorizationRequestDescription);
-    document.getElementById("state").addEventListener("keypress", recalculateAuthorizationRequestDescription);
-    document.getElementById("client_id").addEventListener("keypress", recalculateAuthorizationRequestDescription);
-    document.getElementById("redirect_uri").addEventListener("keypress", recalculateAuthorizationRequestDescription);
-    document.getElementById("scope").addEventListener("keypress", recalculateAuthorizationRequestDescription);
-    document.getElementById("resource").addEventListener("keypress", recalculateAuthorizationRequestDescription);
+    document.getElementById("authorization_endpoint").addEventListener("change", recalculateAuthorizationRequestDescription);
+    document.getElementById("state").addEventListener("change", recalculateAuthorizationRequestDescription);
+    document.getElementById("client_id").addEventListener("change", recalculateAuthorizationRequestDescription);
+    document.getElementById("redirect_uri").addEventListener("change", recalculateAuthorizationRequestDescription);
+    document.getElementById("scope").addEventListener("change", recalculateAuthorizationRequestDescription);
+    document.getElementById("resource").addEventListener("change", recalculateAuthorizationRequestDescription);
 
     document.getElementById("state").value = generateUUID();
     recalculateAuthorizationRequestDescription();
