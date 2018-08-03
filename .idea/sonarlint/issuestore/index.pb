@@ -13,3 +13,9 @@ A
 	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 E
 client/views/root.erb,d/3/d3844d6a2f0027ef55916b7bbd1a39fac11269f4
+>
+client/Gemfile,6/3/635f2faa85c331f4a72e548ca77b6c36d3cabe56
+C
+client/Gemfile.lock,7/e/7e5cccd71f34ce81bc855adf07947342e7b89542
+S
+#.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
