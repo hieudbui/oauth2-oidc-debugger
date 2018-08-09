@@ -800,6 +800,7 @@ function recalculateRefreshRequestDescription() {
     console.log("Leaving recalculateRefreshRequestDescription().");
 }
 
+
 window.onload = function () {
     console.log("Entering onload function.");
     $("#password-form-group1").hide();

@@ -1,4 +1,5 @@
 require 'sinatra'
+
 require 'securerandom'
 require 'json'
 require 'rest-client'
@@ -114,7 +115,11 @@ post("/token") do
         },
         :Authorization => "Bearer #{oauth2_token_response['access_token']}"
     }
-    apigeeServiceResult = RestClient::Request.execute(method: :get, url: apigee_service, headers: apigeeServiceHeaders)
+    begin
+      apigeeServiceResult = RestClient::Request.execute(method: :get, url: apigee_service, headers: apigeeServiceHeaders)
+    rescue RestClient::ExceptionWithResponse => e
+      apigeeServiceResult = e.response.body
+    end
     puts apigeeServiceResult
     @apigeeServiceResult = apigeeServiceResult
     erb :root
