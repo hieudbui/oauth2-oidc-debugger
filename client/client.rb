@@ -110,9 +110,10 @@ post("/token") do
     @accessTokenResult = accessTokenResult
 
     apigeeServiceHeaders = {
-        params: {
-            client_id: client_id
-        },
+        # params: {
+        #     client_id: client_id
+        # },
+        "x-api-key" => client_id,
         :Authorization => "Bearer #{oauth2_token_response['access_token']}"
     }
     begin
