@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="047be65e-230b-43b3-b879-c6fe6f0bc5d4" name="Default" comment="add exception for call to apigee oauth protected service">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/client.rb" beforeDir="false" afterPath="$PROJECT_DIR$/client/client.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,49 +20,87 @@
     <session id="594284567">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.4" value="2" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="erb" value="26" />
+          <entry key="erb" value="103" />
           <entry key="js" value="6" />
-          <entry key="rb" value="74" />
+          <entry key="md" value="93" />
+          <entry key="rb" value="282" />
           <entry key="txt" value="105" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JavaScript" value="6" />
+          <entry key="Markdown" value="93" />
           <entry key="PLAIN_TEXT" value="105" />
-          <entry key="RHTML" value="26" />
-          <entry key="Ruby" value="74" />
+          <entry key="RHTML" value="103" />
+          <entry key="Ruby" value="282" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="Gemfile" value="1" />
           <entry key="erb" value="2" />
+          <entry key="js" value="1" />
+          <entry key="md" value="1" />
           <entry key="rb" value="1" />
+          <entry key="ru" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="JavaScript" value="1" />
+          <entry key="Markdown" value="1" />
           <entry key="RHTML" value="2" />
-          <entry key="Ruby" value="1" />
+          <entry key="Ruby" value="3" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/client.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="117" column="5" lean-forward="true" selection-start-line="117" selection-start-column="5" selection-end-line="117" selection-end-column="5" />
+            <state relative-caret-position="274">
+              <caret line="19" column="11" lean-forward="true" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="663">
+                <caret line="40" column="48" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/config.ru">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="1" column="11" lean-forward="true" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -69,8 +108,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/views/root.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="48" column="17" lean-forward="true" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+            <state relative-caret-position="353">
+              <caret line="72" column="16" lean-forward="true" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="16" />
+              <folding>
+                <element signature="n#style#0;n#tr#2;n#table#0;n#form#0;n#fieldset#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/public/js/forms.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="816" column="33" selection-start-line="816" selection-start-column="33" selection-end-line="816" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -79,15 +130,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>display_tken</find>
-      <find>display_token_request_form_textarea1</find>
-      <find>scope</find>
-      <find>print</find>
-      <find>client_secret</find>
-      <find>grant_type</find>
-      <find>token_grant_type</find>
-      <find>authorization_code</find>
-      <find>port</find>
       <find>http://localhost</find>
       <find>callback</find>
       <find>implicit_grant_access_token</find>
@@ -107,12 +149,21 @@
       <find>localhost</find>
       <find>keypress</find>
       <find>sessions</find>
-      <find>state</find>
       <find>api172</find>
+      <find>merrill-test</find>
+      <find>state</find>
+      <find>@state</find>
+      <find>recalculateAuthorizationRequestDescription</find>
+      <find>session</find>
+      <find>quiet</find>
+      <find>redirect</find>
+      <find>client.rb</find>
+      <find>gateway</find>
+      <find>GATEWAY</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/client" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="projectSyncType">
@@ -145,11 +196,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/client/Gemfile" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/client/public/js/forms.js" />
         <option value="$PROJECT_DIR$/client/views/layout.erb" />
         <option value="$PROJECT_DIR$/client/views/root.erb" />
         <option value="$PROJECT_DIR$/client/client.rb" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -160,10 +211,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="427" />
-    <option name="y" value="180" />
-    <option name="width" value="1680" />
-    <option name="height" value="1028" />
+    <option name="y" value="22" />
+    <option name="width" value="2560" />
+    <option name="height" value="1418" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -172,7 +222,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -208,17 +259,16 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539110686769" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -285,6 +335,8 @@
       <workItem from="1533305851457" duration="2742000" />
       <workItem from="1533836812165" duration="3153000" />
       <workItem from="1534867360553" duration="364000" />
+      <workItem from="1537566094328" duration="2000" />
+      <workItem from="1539028168595" duration="5130000" />
     </task>
     <task id="LOCAL-00001" summary="change to be compatible with apigee">
       <created>1532721238279</created>
@@ -332,13 +384,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21765000" />
+    <option name="totallyTimeSpent" value="26897000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1680" height="1028" extended-state="6" />
+    <frame x="0" y="22" width="2560" height="1418" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.28194103" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28189793" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -348,7 +400,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4993895" weight="0.39915073" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4993895" visible="true" weight="0.39890283" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -356,8 +408,9 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50061053" side_tool="true" weight="0.39977974" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="11" visible="true" weight="0.33972913" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.23589341" />
       <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="bottom" id="IvyIDEA" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -367,9 +420,10 @@
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="right" id="SciView" order="9" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28194103" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28189793" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -379,7 +433,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4993895" weight="0.39915073" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4993895" visible="true" weight="0.39890283" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -387,8 +441,9 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50061053" side_tool="true" weight="0.39977974" />
-      <window_info anchor="bottom" id="Version Control" order="11" visible="true" weight="0.33972913" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.23589341" />
       <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="bottom" id="IvyIDEA" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -398,6 +453,7 @@
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="right" id="SciView" order="9" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -432,8 +488,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/client/client.rb</url>
-          <line>119</line>
+          <line>124</line>
           <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/client/client.rb</url>
+          <line>30</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/client/client.rb</url>
+          <line>31</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -488,30 +554,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/config.ru">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="90">
-            <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -526,13 +568,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/public/js/forms.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="869" column="48" lean-forward="true" selection-start-line="869" selection-start-column="48" selection-end-line="869" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/views/layout.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
@@ -540,17 +575,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/config.ru">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="11" lean-forward="true" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/public/js/forms.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="816" column="33" selection-start-line="816" selection-start-column="33" selection-end-line="816" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/views/root.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="48" column="17" lean-forward="true" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+        <state relative-caret-position="353">
+          <caret line="72" column="16" lean-forward="true" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="16" />
+          <folding>
+            <element signature="n#style#0;n#tr#2;n#table#0;n#form#0;n#fieldset#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/client.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="117" column="5" lean-forward="true" selection-start-line="117" selection-start-column="5" selection-end-line="117" selection-end-column="5" />
+        <state relative-caret-position="274">
+          <caret line="19" column="11" lean-forward="true" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="663">
+            <caret line="40" column="48" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
@@ -583,7 +652,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>groovy-2.5.0</last-edited>
+          <last-edited>actioncable (v5.0.0.1, RVM: ruby-2.3.0 [global]) [gem]</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

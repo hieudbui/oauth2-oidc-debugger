@@ -24,7 +24,7 @@
               </div>
             </td>
             <td>
-              <input type="text" name="authorization_endpoint" id="authorization_endpoint" class="stored" value="https://merrill-test.apigee.net/oauth2/authorize"/>
+              <input type="text" name="authorization_endpoint" id="authorization_endpoint" class="stored" value="<%=APIGEE_URL %>/oauth2/authorize"/>
             </td>
           </div>
         </tr>
@@ -35,7 +35,7 @@
               </div>
             </td>
             <td>
-              <input type="text" name="token_endpoint" id="token_endpoint" class="stored" value="https://merrill-test.apigee.net/oauth2/token"/>
+              <input type="text" name="token_endpoint" id="token_endpoint" class="stored" value="<%=APIGEE_URL %>/oauth2/token"/>
             </td>
           </div>
         </tr>
@@ -46,7 +46,7 @@
               </div>
             </td>
             <td>
-              <input type="text" name="apigee_service" id="apigee_service" class="stored" value="https://stageapi.core.merrillcorp.com/api/profile"/>
+              <input type="text" name="apigee_service" id="apigee_service" class="stored" value="<%=EDGEMICRO_URL %>/api/profile"/>
             </td>
           </div>
         </tr>
@@ -57,7 +57,7 @@
               </div>
             </td>
             <td>
-              <input type="text" name="client_id" id="client_id" class="stored" value="6r4yjxwdy1XcQJ2kjeZ6IoaoenmJZJeU"/>
+              <input type="text" name="client_id" id="client_id" class="stored" value="<%=APIGEE_APP_KEY %>"/>
             </td>
           </div>
         </tr>
@@ -68,7 +68,7 @@
               </div>
             </td>
             <td>
-              <input type="text" name="redirect_uri" id="redirect_uri" class="stored" value="https://quiet-eyrie-28276.herokuapp.com/callback"/>
+              <input type="text" name="redirect_uri" id="redirect_uri" class="stored" value="<%=CALLBACK_URI %>"/>
             </td>
           </div>
         </tr>
@@ -82,7 +82,6 @@
   <fieldset>
     <legend id="h2_title_1" name="">Request Authorization Code</legend>
     <form name="auth_step" id="auth_step" method="get" onsubmit="return OnSubmitForm();">
-      <input type="hidden" name="client_id" id="auth_client_id" value=""/>
       <input type="hidden" name="redirect_uri" id="auth_redirect_uri" value=""/>
       <table>
         <tr>

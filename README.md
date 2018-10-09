@@ -30,6 +30,15 @@ git add -u
 git commit -m 'whatever'
 git push
 
+there are two heroku apps configured for this repo
+heroku config --app blooming-beyond-21033 (prod)
+heroku config --app quiet-eyrie-28276 (stage)
 
+heroku config:set CALLBACK_URI=https://blooming-beyond-21033.herokuapp.com/callback --app blooming-beyond-21033
+heroku config:set APIGEE_URL="https://merrill-prod.apigee.net" --app blooming-beyond-21033   
+heroku config:set EDGEMICRO_URL=https://edgemicro-prod.apps.us2.prod.foundry.mrll.com --app blooming-beyond-21033
+
+https://quiet-eyrie-28276.herokuapp.com/ (stage)
+https://blooming-beyond-21033.herokuapp.com/ (prod)
 
 

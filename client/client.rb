@@ -8,6 +8,11 @@ enable :sessions
 set :session_secret, '*&(^B234'
 
 GATEWAY = ENV['GATEWAY'] || "http://localhost:8080"
+CALLBACK_URI = ENV['CALLBACK_URI'] || "https://quiet-eyrie-28276.herokuapp.com/callback"
+APIGEE_URL = ENV['APIGEE_URL'] || "https://merrill-test.apigee.net"
+EDGEMICRO_URL = ENV['EDGEMICRO_URL'] || "https://stageapi.core.merrillcorp.com"
+APIGEE_APP_KEY = ENV['APIGEE_APP_KEY'] || "6r4yjxwdy1XcQJ2kjeZ6IoaoenmJZJeU"
+
 
 get("/") do
   @state = SecureRandom.uuid
