@@ -123,7 +123,7 @@ post("/token") do
     }
     begin
       apigeeServiceResult = RestClient::Request.execute(method: :get, url: apigee_service, headers: apigeeServiceHeaders)
-    rescue RestClient::ExceptionWithResponse => e
+    rescue Exception => e
       apigeeServiceResult = e.response.body
     end
     puts apigeeServiceResult
