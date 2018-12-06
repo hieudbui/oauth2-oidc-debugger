@@ -47,6 +47,7 @@ heroku config:set EDGEMICRO_URL=https://devapi.core.merrillcorp.com --app warm-b
 
 https://warm-badlands-68435.herokuapp.com/ (dev)
 https://quiet-eyrie-28276.herokuapp.com/ (stage)
-https://blooming-beyond-21033.herokuapp.com/ (prod)
+https://blooming-beyond-21033.herokuapp.com/ (prod us)
+https://peaceful-temple-59478.herokuapp.com/ (prod eu)
 
 
