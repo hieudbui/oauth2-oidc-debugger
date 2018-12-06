@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="047be65e-230b-43b3-b879-c6fe6f0bc5d4" name="Default" comment="add dev">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -30,7 +29,7 @@
         <counts>
           <entry key="erb" value="103" />
           <entry key="js" value="6" />
-          <entry key="md" value="157" />
+          <entry key="md" value="172" />
           <entry key="rb" value="294" />
           <entry key="txt" value="125" />
         </counts>
@@ -38,7 +37,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JavaScript" value="6" />
-          <entry key="Markdown" value="157" />
+          <entry key="Markdown" value="172" />
           <entry key="PLAIN_TEXT" value="125" />
           <entry key="RHTML" value="103" />
           <entry key="Ruby" value="294" />
@@ -79,8 +78,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="741">
-                <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+              <first_editor relative-caret-position="504">
+                <caret line="44" column="54" selection-start-line="44" selection-start-column="54" selection-end-line="44" selection-end-column="54" />
               </first_editor>
               <second_editor />
             </state>
@@ -302,7 +301,7 @@
       <workItem from="1542149660978" duration="832000" />
       <workItem from="1543332699200" duration="834000" />
       <workItem from="1543623728087" duration="611000" />
-      <workItem from="1544061880402" duration="1300000" />
+      <workItem from="1544061880402" duration="2056000" />
     </task>
     <task id="LOCAL-00001" summary="change to be compatible with apigee">
       <created>1532721238279</created>
@@ -350,7 +349,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35283000" />
+    <option name="totallyTimeSpent" value="36039000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="1028" extended-state="0" />
@@ -580,8 +579,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="741">
-            <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+          <first_editor relative-caret-position="504">
+            <caret line="44" column="54" selection-start-line="44" selection-start-column="54" selection-end-line="44" selection-end-column="54" />
           </first_editor>
           <second_editor />
         </state>

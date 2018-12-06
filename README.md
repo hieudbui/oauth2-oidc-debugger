@@ -32,13 +32,19 @@ git push
 
 there are three heroku apps configured for this repo
 heroku config --app blooming-beyond-21033 (prod)
+heroku config --app peaceful-temple-59478 (prod-eu)
 heroku config --app quiet-eyrie-28276 (stage)
 heroku config --app warm-badlands-68435 (dev)
 
 (prod)
 heroku config:set CALLBACK_URI=https://blooming-beyond-21033.herokuapp.com/callback --app blooming-beyond-21033
 heroku config:set APIGEE_URL="https://merrill-prod.apigee.net" --app blooming-beyond-21033   
-heroku config:set EDGEMICRO_URL=https://edgemicro-prod.apps.us2.prod.foundry.mrll.com --app blooming-beyond-21033
+heroku config:set EDGEMICRO_URL=https://api.datasiteone.merrillcorp.com --app blooming-beyond-21033
+
+(prod-eu)
+heroku config:set CALLBACK_URI=https://peaceful-temple-59478.herokuapp.com/callback --app peaceful-temple-59478
+heroku config:set APIGEE_URL="https://merrill-prod.apigee.net" --app peaceful-temple-59478   
+heroku config:set EDGEMICRO_URL=https://api.global.datasiteone.merrillcorp.com/eu --app peaceful-temple-59478
 
 (dev)
 heroku config:set CALLBACK_URI=https://warm-badlands-68435.herokuapp.com/callback --app warm-badlands-68435
