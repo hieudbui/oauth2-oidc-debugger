@@ -1,8 +1,10 @@
 require 'sinatra'
-
+require 'Date'
 require 'securerandom'
 require 'json'
 require 'rest-client'
+require "zlib"
+require 'base64'
 
 enable :sessions
 set :session_secret, '*&(^B234'
@@ -12,12 +14,32 @@ CALLBACK_URI = ENV['CALLBACK_URI'] || "https://quiet-eyrie-28276.herokuapp.com/c
 APIGEE_URL = ENV['APIGEE_URL'] || "https://merrill-test.apigee.net"
 EDGEMICRO_URL = ENV['EDGEMICRO_URL'] || "https://stageapi.core.merrillcorp.com"
 APIGEE_APP_KEY = ENV['APIGEE_APP_KEY'] || "6r4yjxwdy1XcQJ2kjeZ6IoaoenmJZJeU"
-
+SAML_IDP_URL = ENV['SAML_IDP_URL'] || "https://auth-stage.merrillcorp.com/idp/startSSO.ping"
+SAML_RELAY_STATE = ENV['SAML_RELAY_STATE'] || "relaystate"
+SAML_PARTNER_ID=ENV['SAML_RELAY_STATE']  || "https://hieu-test/sp"
 
 get("/") do
   @state = SecureRandom.uuid
   session[:state] = @state
   erb :root
+end
+
+
+get("/saml") do
+  @state = SecureRandom.uuid
+  session[:state] = @state
+  erb :saml
+end
+
+get("/samlrequest") do
+  relay_state= params[:relay_state]
+  saml_idp_endpoint=params[:auth_saml_idp_endpoint]
+  saml_partner_id=params[:auth_saml_partner_id]
+  saml_assertion_consumer_service_url="https://webhook.site/f41966d4-6051-4bea-a91e-fd55903b5906/samlcallback"
+  saml_authn_request="<samlp:AuthnRequest AssertionConsumerServiceURL='#{saml_assertion_consumer_service_url}' Destination='#{saml_idp_endpoint}?PartnerSpId=#{saml_partner_id}' ID='#{SecureRandom.uuid}' IssueInstant='2018-11-13T19:17:41Z' Version='2.0' xmlns:saml='urn:oasis:names:tc:SAML:2.0:assertion' xmlns:samlp='urn:oasis:names:tc:SAML:2.0:protocol'/>"
+  compressed_saml_authn_request = Zlib::Deflate.deflate(saml_authn_request)
+  encoded_compressed_saml_authn_request = Base64.encode64 compressed_saml_authn_request
+  redirect "#{saml_idp_endpoint}?PartnerSpId=#{CGI.escape(saml_partner_id)}&RelayState=#{CGI.escape(relay_state)}&SAMLRequest=#{CGI.escape(encoded_compressed_saml_authn_request)}"
 end
 
 get("/callback") do
