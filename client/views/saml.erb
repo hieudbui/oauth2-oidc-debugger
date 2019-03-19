@@ -1,0 +1,118 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="/js/saml.js"></script>
+
+<div class="step1" id="step1" style="display:block">
+  <fieldset>
+    <legend>Configuration Parameters</legend>
+    <form id="endpoints" name="endpoints" action="">
+      <table border="0">
+        <tr>
+          <div class="form-group">
+            <td>
+              <div class="tooltip"><label>SAML IDP Endpoint: </label><span class="tooltiptext">Enter the SAML IDP Endpoint</span>
+              </div>
+            </td>
+            <td>
+              <input type="text" name="saml_idp_endpoint" id="saml_idp_endpoint" class="stored" value="<%= SAML_IDP_URL %>"/>
+            </td>
+          </div>
+        </tr>
+        <tr>
+          <div class="form-group">
+            <td>
+              <div class="tooltip"><label>SAML Partner Id: </label><span class="tooltiptext">Enter the SAML Partner Id</span>
+              </div>
+            </td>
+            <td>
+              <input type="text" name="saml_partner_id" id="saml_partner_id" class="stored" value="<%= SAML_PARTNER_ID %>"/>
+            </td>
+          </div>
+        </tr>
+        <tr>
+          <div class="form-group">
+            <td>
+              <div class="tooltip"><label>Apigee edgemicro service: </label><span class="tooltiptext">Can not be changed at this time.  It only supports GET http method.  Posting is not allowed</span>
+              </div>
+            </td>
+            <td>
+              <input type="text" name="apigee_service" id="apigee_service" class="stored" value="<%= EDGEMICRO_URL %>/api/profile"/>
+            </td>
+          </div>
+        </tr>
+        <tr>
+          <div class="form-group">
+            <td>
+              <div class="tooltip"><label>Apigee App Key (AKA Client Id): </label><span class="tooltiptext">Enter the Apigee Client Id</span>
+              </div>
+            </td>
+            <td>
+              <input type="text" name="client_id" id="client_id" class="stored" value="<%= APIGEE_APP_KEY %>"/>
+            </td>
+          </div>
+        </tr>
+        <tr>
+          <div class="form-group">
+            <td>
+              <div class="tooltip"><label>Redirect URL: </label><span class="tooltiptext">Enter the redirected url registered in Apigee (callback url) and ping</span>
+              </div>
+            </td>
+            <td>
+              <input type="text" name="redirect_uri" id="redirect_uri" class="stored" value="<%= CALLBACK_URI %>"/>
+            </td>
+          </div>
+        </tr>
+
+      </table>
+    </form>
+  </fieldset>
+</div>
+
+<div class="step2" id="step2">
+  <fieldset>
+    <legend id="h2_title_1" name="">Service Provider (SP) Initiated SAML Request</legend>
+    <form name="auth_step" action="/samlrequest" id="auth_step" method="get" onsubmit="return OnSubmitForm();">
+      <input type="hidden" name="auth_saml_idp_endpoint" id="auth_saml_idp_endpoint" value=""/>
+      <input type="hidden" name="auth_saml_partner_id" id="auth_saml_partner_id" value=""/>
+      <table>
+        <tr>
+          <div class="form-group">
+            <td>
+              <div class="tooltip"><label>Relay State:</label><span class="tooltiptext">Relay state that will be passed by Identity Provider back to Service Provider in SAML Response</span>
+              </div>
+            </td>
+            <td>
+              <input type="text" name="relay_state" id="relay_state" value="<%= SAML_RELAY_STATE %>"/>
+            </td>
+          </div>
+        </tr>
+        <tr id="authzResourceRow" style="visibility:collapse">
+          <div class="form-group" id="resourceIfYes" style="visibility:collapse" style="display:none;margin-top:3%;">
+            <td>
+              <div class="tooltip"><label>Resource: </label><span class="tooltiptext">The resource parameter, together with scope, tells the Identity Provider what audience or scope is desired with the access token.</span>
+              </div>
+            </td>
+            <td><input type="text" name="resource" class="stored" id="resource"/></td>
+          </div>
+        </tr>
+        <tr>
+          <td><input type="submit" class="btn2" value="Request"/></td>
+          <td></td>
+        </tr>
+    </form>
+    <tr>
+      <div class="display_authz_request_class" id="display_authz_request_class">
+        <form action="" name="display_authz_request_form" id="display_authz_request_form">
+          <td>
+            <div class="tooltip">
+              <label name="display_authz_request_form_label1" value="" id="display_authz_request_form_label1">Request</label><span class="tooltiptext">This field shows the request that is made to th Authorization Endpoint.</span>
+            </div>
+          </td>
+          <td><textarea rows="10" cols="100" id="display_authz_request_form_textarea1"></textarea></td>
+        </form>
+      </div>
+    </tr>
+    </table>
+  </fieldset>
+</div>
+
+
