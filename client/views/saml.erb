@@ -31,6 +31,17 @@
         <tr>
           <div class="form-group">
             <td>
+              <div class="tooltip"><label>SAML Assertion Consumer Service URL: </label><span class="tooltiptext">Enter the SAML Assertion Consumer Service URL</span>
+              </div>
+            </td>
+            <td>
+              <input type="text" name="saml_assertion_consumer_service_url" id="saml_assertion_consumer_service_url" class="stored" value="<%= SAML_ACS_URL %>"/>
+            </td>
+          </div>
+        </tr>
+        <tr>
+          <div class="form-group">
+            <td>
               <div class="tooltip"><label>Apigee edgemicro service: </label><span class="tooltiptext">Can not be changed at this time.  It only supports GET http method.  Posting is not allowed</span>
               </div>
             </td>
@@ -73,6 +84,7 @@
     <form name="auth_step" action="/samlrequest" id="auth_step" method="get" onsubmit="return OnSubmitForm();">
       <input type="hidden" name="auth_saml_idp_endpoint" id="auth_saml_idp_endpoint" value=""/>
       <input type="hidden" name="auth_saml_partner_id" id="auth_saml_partner_id" value=""/>
+      <input type="hidden" name="auth_saml_assertion_consumer_service_url" id="auth_saml_assertion_consumer_service_url" value=""/>
       <table>
         <tr>
           <div class="form-group">
