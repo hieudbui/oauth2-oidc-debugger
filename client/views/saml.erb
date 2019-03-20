@@ -9,33 +9,33 @@
         <tr>
           <div class="form-group">
             <td>
-              <div class="tooltip"><label>SAML IDP Endpoint: </label><span class="tooltiptext">Enter the SAML IDP Endpoint</span>
+              <div class="tooltip"><label>Authorization Endpoint: </label><span class="tooltiptext">Enter the Apigee SAML Authorization Endpoint=</span>
               </div>
             </td>
             <td>
-              <input type="text" name="saml_idp_endpoint" id="saml_idp_endpoint" class="stored" value="<%= SAML_IDP_URL %>"/>
+              <input type="text" name="external_authorization_endpoint" id="external_authorization_endpoint" class="stored" value="<%=APIGEE_URL %>/oauth2/externalAuthorize"/>
             </td>
           </div>
         </tr>
         <tr>
           <div class="form-group">
             <td>
-              <div class="tooltip"><label>SAML Partner Id: </label><span class="tooltiptext">Enter the SAML Partner Id</span>
+              <div class="tooltip"><label>Redirect URL: </label><span class="tooltiptext">Enter the redirected url registered in Apigee (callback url) and ping</span>
               </div>
             </td>
             <td>
-              <input type="text" name="saml_partner_id" id="saml_partner_id" class="stored" value="<%= SAML_PARTNER_ID %>"/>
+              <input type="text" name="redirect_uri" id="redirect_uri" class="stored" value="<%=CALLBACK_URI %>"/>
             </td>
           </div>
         </tr>
         <tr>
           <div class="form-group">
             <td>
-              <div class="tooltip"><label>SAML Assertion Consumer Service URL: </label><span class="tooltiptext">Enter the SAML Assertion Consumer Service URL</span>
+              <div class="tooltip"><label>External IDP: </label><span class="tooltiptext">Enter the External IDP configured in PingFed</span>
               </div>
             </td>
             <td>
-              <input type="text" name="saml_assertion_consumer_service_url" id="saml_assertion_consumer_service_url" class="stored" value="<%= SAML_ACS_URL %>"/>
+              <input type="text" name="external_idp" id="external_idp" class="stored" value="<%= EXTERNAL_IDP %>"/>
             </td>
           </div>
         </tr>
@@ -82,9 +82,9 @@
   <fieldset>
     <legend id="h2_title_1" name="">Service Provider (SP) Initiated SAML Request</legend>
     <form name="auth_step" action="/samlrequest" id="auth_step" method="get" onsubmit="return OnSubmitForm();">
-      <input type="hidden" name="auth_saml_idp_endpoint" id="auth_saml_idp_endpoint" value=""/>
-      <input type="hidden" name="auth_saml_partner_id" id="auth_saml_partner_id" value=""/>
-      <input type="hidden" name="auth_saml_assertion_consumer_service_url" id="auth_saml_assertion_consumer_service_url" value=""/>
+      <input type="hidden" name="auth_external_authorization_endpoint" id="auth_external_authorization_endpoint" value=""/>
+      <input type="hidden" name="auth_external_idp" id="auth_external_idp" value=""/>
+      <input type="hidden" name="auth_redirect_uri" id="auth_redirect_uri" value=""/>
       <table>
         <tr>
           <div class="form-group">
@@ -93,7 +93,7 @@
               </div>
             </td>
             <td>
-              <input type="text" name="relay_state" id="relay_state" value="<%= SAML_RELAY_STATE %>"/>
+              <input type="text" name="relay_state" id="relay_state" value="<%= RELAY_STATE %>"/>
             </td>
           </div>
         </tr>
